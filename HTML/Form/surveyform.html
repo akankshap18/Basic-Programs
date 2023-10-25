@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div>
+        <h1 class="title">Customer Survey Form</h1>
+        <div class="wrapper">
+            <form class="survey">
+                <div class="form_wrap">
+                    <div class="input_grp">
+                        <div class="input_wrap">
+                            <label for="f_name">First Name</label>
+                            <input type="text" id="fname" required>
+                        </div>
+                        <div class="input_wrap">
+                            <label for="l_name">Last Name</label>
+                            <input type="text" id="lname" required>
+                        </div>
+                    </div>
+
+                    <div class="input_wrap">
+                        <label>Date of Birth</label>
+                        <input type="date" id="dob" required>
+                    </div>
+
+                    <div class="input_wrap">
+                        <label>Country</label>
+                        <select name="Country" id="country" required>
+                            <option value="" disabled selected>Select your country</option>
+                            <option value="USA">USA</option>
+                            <option value="Canada">Canada</option>
+                            <option value="China">China</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Germany">Germany</option>
+                            <option value="India">India</option>
+                            <option value="Australia">Australia</option>
+                            <option value="UK">UK</option>
+                            <option value="France">France</option>
+                            <option value="Russia">Russia</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="South Korea">South Korea</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Saudi Arabia">Saudi Arabia</option>
+                            <option value="Turkey">Turkey</option>
+                            <option value="Netherlands">Netherlands</option>
+                            <option value="Switzerland">Switzerland</option>
+                            <option value="Belgium">Belgium</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Poland">Poland</option>
+                            <option value="Czech Republic">Czech Republic</option>
+                            <option value="Ireland">Ireland</option>
+                            <option value="Finland">Finland</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Norway">Norway</option>
+                            <option value="Israel">Israel</option>
+                            <option value="New Zealand">New Zealand</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Vietnam">Vietnam</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="Philippines">Philippines</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="input_wrap">
+                        <label>Gender</label>
+                        <input type="checkbox" name="gender" value="Male"> Male &nbsp;
+                        <input type="checkbox" name="gender" value="Female"> Female
+                    </div>
+
+                    <div class="input_wrap">
+                        <label>Profession</label>
+                        <input type="text" id="profession" required>
+                    </div>
+
+                    <div class="input_wrap">
+                        <label>Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div class="input_wrap">
+                        <label>Mobile Number</label>
+                        <input type="tel" id="mobile" required>
+                    </div>
+
+                    <div class="input_wrap">
+                        <input type="submit" value="Submit" class="submit_btn" onclick="submitForm()">
+                        <input type="reset" value="Reset" class="reset_btn" onclick="resetForm()">
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <p>@2023 Customer Survey Form. All Rights Reserved | Design by <a href="#">W3Layouts</a></p>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>
